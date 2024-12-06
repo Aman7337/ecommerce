@@ -10,6 +10,8 @@ import CustomerReview from "../components/customer-review/CustomerReview";
 import Footer from "../components/footer/Footer";
 
 const Home = () => {
+  // Commenting for learning git.
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
