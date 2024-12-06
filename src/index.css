@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Integral_CF_Bold";
+  src: url("./assets/fonts/Integral_CF_Bold.otf") format("otf");
+}
+
+.Casual,
+.Gym {
+  width: 400px !important;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.Formal,
+.Party {
+  width: 600px !important;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.dropdownPofile {
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  width: 200px;
+  padding: 15px;
+  background-color: white;
+}
+
+.dropdownProfile::before {
+  position: absolute;
+  content: "";
+  top: -2rem;
+  left: 2.5rem;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.searchDropdown {
+  position: absolute;
+  top: 8rem;
+  right: 5rem;
+  width: 200px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 200px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 24px;
+  border: 1px solid grey;
+}
