@@ -7,7 +7,7 @@ export const Store = ({ children }) => {
 
   const getProductData = async () => {
     try {
-      fetch("calhost:3000/api/products/")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/products")
         .then((res) => res.json())
         .then((result) => setApiProductsData(result))
         .catch((error) => console.error(error));
