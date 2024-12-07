@@ -16,7 +16,7 @@ const TshirtsDetails = () => {
     window.scrollTo(0, 0);
     (async () => {
       try {
-        fetch(`https://e-commerce-server-zeta-beryl.vercel.app/${parmas.id}`)
+        fetch(`https://e-commerce-server-zeta-beryl.vercel.app/api/products${parmas.id}`)
           .then((res) => res.json())
           .then((result) => setApiData(result))
           .catch((error) => console.error(error));
