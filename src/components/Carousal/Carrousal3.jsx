@@ -30,7 +30,7 @@ const Carousal3 = () => {
 
   const getReviewData = async () => {
     try {
-      fetch("https://e-commerce-server-zeta-beryl.vercel.app/")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/products")
         .then((response) => response.json())
         .then((result) => setReviewData(result))
         .catch((error) => console.error(error));
