@@ -6,7 +6,7 @@ const Comments = () => {
 
   const getReviewApi = async () => {
     try {
-      fetch("http://localhost:3000/api/reviews")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/reviews")
         .then((response) => response.json())
         .then((result) => setGetApi(result))
         .catch((error) => console.error(error));

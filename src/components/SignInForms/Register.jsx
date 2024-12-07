@@ -15,7 +15,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:3000/api/registor/create", {
+      let res = await fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/registor/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

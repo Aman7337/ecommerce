@@ -5,7 +5,7 @@ const Brands = () => {
 
   const getBrandLogoApi = async () => {
     try {
-      fetch("https://e-commerce-server-zeta-beryl.vercel.app/")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/brands")
         .then((response) => response.json())
         .then((result) => setBrandLogoData(result))
         .catch((error) => console.error(error));

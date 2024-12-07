@@ -12,7 +12,7 @@ const Main = () => {
 
   const getBannerApi = async () => {
     try {
-      fetch("https://e-commerce-server-zeta-beryl.vercel.app/")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/carousal")
         .then((response) => response.json())
         .then((result) => setBannerData(result[0]))
         .catch((error) => console.error(error));
