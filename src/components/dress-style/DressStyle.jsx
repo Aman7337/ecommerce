@@ -12,7 +12,7 @@ const DressStyle = () => {
   const [styleData, setStyleData] = useState([]);
   const getStyleApiData = async () => {
     try {
-      fetch("https://e-commerce-server-zeta-beryl.vercel.app/")
+      fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/styles")
         .then((response) => response.json())
         .then((result) => setStyleData(result))
         .catch((error) => console.error(error));

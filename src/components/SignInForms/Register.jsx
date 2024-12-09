@@ -15,34 +15,20 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://e-commerce-server-zeta-beryl.vercel.app/api/registor/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          First_name: "hello",
-          Last_name: "hdhiw",
-          Email: "hello@gmail.com",
-          Password: "123456",
-        }),
-      });
+      let res = await fetch(
+        "https://e-commerce-server-zeta-beryl.vercel.app/api/registor/create",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            First_name: "hello",
+            Last_name: "hdhiw",
+            Email: "hello@gmail.com",
+            Password: "123456",
+          }),
+        }
+      );
 
-      // const raw = JSON.stringify({
-      //   First_name: "reeo",
-      //   Last_name: "hdhiw",
-      //   Email: "IAmYu@gmail.com",
-      //   Password: "32235",
-      // });
-
-      // const requestOptions = {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: raw,
-      // };
-
-      // let res = await fetch(
-      //   "http://localhost:3000/api/registor/create",
-      //   requestOptions
-      // );
       const data = await res.json();
       console.log(data);
     } catch (error) {
